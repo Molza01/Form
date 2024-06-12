@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Form</title>
+</head>
+
+<body>
+    <style>
+        body {
+            /* align-content: center; */
+            background-color: bisque;
+            background-repeat: no-repeat;
+            background-position-x: 250px;
+            background-position-y: 250px;
+
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            padding: 30px;
+
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        h2 {
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        p{
+            text-align: center;
+            font-style: oblique;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .username {
+
+            font-size: 27px;
+            margin-bottom: 25px;
+            margin-left: 10px;
+
+        }
+        .username input[type="username"]{
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .cls {
+
+            font-size: 27px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+
+        .gender {
+
+            font-size: 27px;
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+
+        .sect {
+
+            font-size: 27px;
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+
+        .modet {
+
+            font-size: 27px;
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+        .modet input[type="trans"]{
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .address {
+
+            font-size: 27px;
+            margin-bottom: 80px;
+            margin-left: 10px;
+        }
+        .address input[type="addr"]{
+            font-size: 18px;
+            border-radius: 5px;
+
+        }
+
+        .email {
+
+            font-size: 27px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+        .email input[type="emailid"]{
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .pswd label {
+            font-size: 25px;
+            margin-bottom: 25px;
+            margin-left: 10px;
+        }
+
+        .pswd i.fa-lock {
+            
+            right: 10px;
+            top: 35px;
+            color: black;
+            pointer-events: none;
+        }
+
+
+        .pswd input[type="password"] {
+
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 5px;
+            outline: none;
+            border-width: 2px;
+        }
+
+        footer {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .animated-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: whitesmoke;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 50px;
+
+        }
+
+        .animated-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        .animated-button:active {
+            background-color: #003f7f;
+            transform: scale(1.05);
+        }
+        .money label{
+            font-size: 28px;
+            
+        }
+        
+        .wrapper-main{
+            width: 1000px;
+            padding: 100px,0;
+            
+            border: 4px solid black;
+        }
+
+        @media only screen and (max-width:600px){
+            .wrapper-main{
+            width: 100%;
+            
+        }
+        .para{
+            width: 100%;
+            min-width: fit-content;
+            max-width: fit-content;
+        }
+        }
+        
+
+        @media only screen and (min-width:601px){
+            .wrapper-main{
+            width: 100%;
+            
+        }
+        }
+        @media only screen and (min-width:768px){
+            .wrapper-main{
+            width: 100%;
+            
+        }
+        }
+        @media only screen and (min-width:1000px){
+            .wrapper-main{
+            width: 100%;
+            
+        }
+        }
+        
+       
+        
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const passwordInput = document.getElementById('pswd');
+            const showPasswordCheckbox = document.getElementById('show-password');
+
+            showPasswordCheckbox.addEventListener('change', () => {
+                if (showPasswordCheckbox.checked) {
+                    passwordInput.type = 'text';
+                } else {
+                    passwordInput.type = 'password';
+                }
+            });
+        });
+
+    </script>
+
+    <div class="wrapper-main">
+
+        <h1>Army Public School</h1>
+        <u>
+            <h2>School Picnic Form</h2>
+        </u>
+    
+        <h3>About Trip</h3>
+        <div class="para">
+
+            <p>
+        Our school is excited to announce a delightful picnic to Imagica, a amusement park filled with adventure and fun. 
+        <br>
+        This outing will offer students a perfect blend of thrilling rides, captivating attractions, and memorable experiences. 
+        <br>
+        It's a wonderful opportunity for everyone to unwind, bond with classmates, and create lasting memories.
+          <br>
+        Students and staff alike are looking forward to this exciting trip, which is sure to be a highlight of the school year.
+        <br>
+        Let's gear up for a day of joy, laughter, and endless excitement at Imagica!
+            
+            </p>
+        </div>
+    
+    
+        <div class="username">
+            <label for="username"> Enter your Name - </label>
+            <input type="username" id="username" name="username" placeholder="Enter your Name">
+        </div>
+    
+        <div class="email">
+            <label for="eid">Email -</label>
+            <input type="emailid" name="eid" id="eid" placeholder=" email">
+        </div>
+    
+        <div div class="pswd">
+            <label for="password">Password -</label>
+            <input type="password" id="pswd" name="password" placeholder="password" >
+            <i class="fa-solid fa-lock"></i>
+            <input type="checkbox" id="show-password"> Show Password
+        </div>
+    
+        <div class="cls">
+            <label for="class">Select your Class - </label>
+            <select name="Class" id="class">
+                <option value="IX">IX</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+    
+            </select>
+        </div>
+        <div class="gender">
+            <label for="male"> Select Gender - Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+    
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+    
+        </div>
+    
+        <div class="sect">
+    
+            <label for="sec"> Section - </label>
+            <select name="secction" id="sec">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+            </select>
+        </div>
+    
+        <div class="modet">
+            <label for="mode">Mode of Transport -</label>
+            <input type="trans" name="mode" id="mode" placeholder="Enter">
+        </div>
+    
+        <div class="address">
+            <label for="add">Enter your Address-</label>
+            <input type="addr" name="address" id="add" name="add" placeholder="Enter your Address">
+        </div>
+    
+        <div class="money">
+            <h4>Money paid - </h4>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="money" value="yes">
+    
+            <label for="no">No</label>
+            <input type="radio" id="no" name="money" value="no">
+    
+        </div>
+    
+        <div class="extra">
+            <label for="extra">If any query, ask below</label>
+            <br>
+            <textarea name="extra" id="extra" cols="30" rows="5">....</textarea>
+        </div>
+        
+        <a href="page.html">
+            <button class="animated-button" id="navigate-button">Submit</button>
+        </a>
+        <footer>Created by Sandesh Shinde an Ex-APSian <i class="fa-solid fa-person-rifle"></i></footer>
+    </div>
+
+
+</body>
+
+</html>
